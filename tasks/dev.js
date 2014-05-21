@@ -1,7 +1,10 @@
-var 
-    gulp = require('gulp'),
-    stylus = require('gulp-stylus'),
-    connect = require('gulp-connect');
+function loadModule(module) {
+    global[module.replace(/^gulp-/, '')] = require(module);
+}
+
+require('matchdep')
+    .filterDev('gulp*')
+    .forEach(loadModule);
 
 // Get one .styl file and render
 gulp.task('one', function () {

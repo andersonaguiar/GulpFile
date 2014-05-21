@@ -10,7 +10,8 @@
     "gulp-sass": "~0.2.3",
     "gulp-util": "~2.2.9",
     "require-dir": "^0.1.0",
-    "gulp-stylus": "^1.0.1"
+    "gulp-stylus": "^1.0.1",
+    "matchdep": "^0.3.0"
   },
   "engines": {
     "node": "*",
