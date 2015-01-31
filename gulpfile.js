@@ -1,11 +1,5 @@
-function loadModule(module) {
-    global[module.replace(/^gulp-/, '')] = require(module);
-}
-require('matchdep')
-    .filterDev('gulp-*')
-    .forEach(loadModule);
+var requireDir 	= require('require-dir');
 
-var 
-    requireDir = require('require-dir'),
-    dir = requireDir('./tasks');
+// Require all tasks in gulp/tasks, including subfolders
+requireDir('./gulp/tasks', { recurse: true });
 
