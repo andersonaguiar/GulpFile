@@ -3,7 +3,7 @@ var config      = require('../../config'),
 
 // Get and render all .styl files recursively
 gulp.task('stylus', function () {
-    gulp.src(config.stylus.src)
+    gulp.src(config.global.preprocessor.src)
         .pipe(stylus())
-        .pipe(gulp.dest(config.stylus.dest));
+        .pipe(gulp.dest(config.global.preprocessor.dest));
 });
