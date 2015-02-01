@@ -3,14 +3,31 @@ require('matchdep').filterDev('gulp-*').forEach(function(module){
     global[module.replace(/^gulp-/, '')] = require(module);
 });
 
+var src     = 'app/src',
+    dest    = 'app/build';
+
 // set configs for plugins
 module.exports = {
     stylus: { },
+    browserSync: {
+        server: {
+          // Serve up our build folder
+          baseDir: dest
+        }
+    },
+    images: {
+        src: src + '/images/**',
+        dest: dest + '/assets/images'
+    },
+    markup: {
+        src: src + '/**/*.html',
+        dest: dest
+    },
     global: {
         preprocessor: {
             choice: 'stylus', //sass, less or stylus
-            src:    'assets/stylus/**/*.styl', //dir of sass, less or stylus
-            dest:   'assets/css' //dir of css dest
+            src:    src + '/stylus/**/*.styl', //dir of sass, less or stylus
+            dest:   dest + '/assets/css' //dir of css dest
         }
     }
 }
