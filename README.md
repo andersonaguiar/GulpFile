@@ -19,7 +19,7 @@ The main tasks are:
 
 `gulp dev` and `gulp build`
 
-For other tasks look at individual tasks in [`gulp/tasks`](https://github.com/andersonaguiar/GulpFile/tree/master/gulp/tasks).
+For others, look at individual tasks in [`gulp/tasks`](https://github.com/andersonaguiar/GulpFile/tree/master/gulp/tasks).
 
 
 ## License
