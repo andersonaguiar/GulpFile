@@ -9,6 +9,8 @@ var src     = 'app/src',
 // set configs for plugins
 module.exports = {
     stylus: { },
+    sass: { },
+    less: { },
     browserSync: {
         server: {
           // Serve up our build folder
