@@ -11,6 +11,10 @@ module.exports = {
     stylus: { },
     sass: { },
     less: { },
+    js: {
+        src: src + '/js/**/*',
+        dest: dest + '/assets/js'
+    },
     browserSync: {
         server: {
           // Serve up our build folder

@@ -1,3 +1,3 @@
 var gulp        = require('gulp');
 
-gulp.task('build', ['images']);
+gulp.task('build', ['images', 'uglifyJs']);
