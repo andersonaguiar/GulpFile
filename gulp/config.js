@@ -3,8 +3,12 @@ require('matchdep').filterDev('gulp-*').forEach(function(module){
     global[module.replace(/^gulp-/, '')] = require(module);
 });
 
-var src     = 'app/src',
-    dest    = 'app/build';
+
+// =======================  CONFIGS ===================================
+var PATH = {
+    src: 'src',
+    dest: 'app'
+}
 
 // set configs for plugins
 module.exports = {
@@ -12,28 +16,30 @@ module.exports = {
     sass: { },
     less: { },
     js: {
-        src: src + '/js/**/*',
-        dest: dest + '/assets/js'
+        src: PATH.src + '/js/**/*',
+        dest: PATH.dest + '/assets/js'
     },
     browserSync: {
         server: {
           // Serve up our build folder
-          baseDir: dest
+          baseDir: PATH.src
         }
     },
     images: {
-        src: src + '/images/**',
-        dest: dest + '/assets/images'
+        src: PATH.src + '/images/**',
+        dest: PATH.dest + '/assets/images'
     },
     markup: {
-        src: src + '/**/*.html',
-        dest: dest
+        src: PATH.src + '/**/*.html',
+        dest: PATH.dest
     },
     global: {
+        src: PATH.src,
+        dest: PATH.dest,
         preprocessor: {
             choice: 'stylus', //sass, less or stylus
-            src:    src + '/stylus/**/*.styl', //dir of sass, less or stylus
-            dest:   dest + '/assets/css' //dir of css dest
+            src:    PATH.src + '/stylus/**/*.styl', //dir of sass, less or stylus
+            dest:   PATH.dest + '/assets/css' //dir of css dest
         }
     }
 }

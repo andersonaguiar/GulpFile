@@ -1,3 +1,5 @@
 node_modules
 assets/css/
 app/build
+npm-debug.log
+app
