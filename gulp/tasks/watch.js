@@ -1,5 +1,5 @@
-var config      = require('../config'),
-    gulp        = require('gulp');
+var config      = require('../config')
+,   gulp        = require('gulp');
 
 gulp.task('watch', ['browserSync'], function(callback) {
     // sass|less|stylus
