@@ -1,5 +1,4 @@
-var gulp    = require('gulp')
-,   config  = require('../../config')
+var config  = require('../../config')
 ,   exec    = require('child_process').exec;
 
 gulp.task('clean', function(cb){

@@ -1,8 +1,7 @@
-var config      = require('../config')
-,   gulp        = require('gulp');
+var config      = require('../config');
 
 gulp.task('watch', ['browserSync'], function(callback) {
-    // sass|less|stylus
+    // sass|stylus
     gulp.watch(config.global.preprocessor.src, [config.global.preprocessor.choice]);
 
     // images
