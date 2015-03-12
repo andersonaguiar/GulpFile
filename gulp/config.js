@@ -11,7 +11,9 @@ global['plugin']  = require(
                       , replaceString : /^gulp(-|\.)/
                       , camelize      : true
                       , lazy          : true
-                      , rename        : { }
+                      , rename        : {
+                        'gulp-filesize': 'size'
+                      }
                     });
 
 // =======================  CONFIGS ===================================
@@ -46,8 +48,8 @@ module.exports = {
     src: 'src',
     dest: 'app',
     preprocessor: {
-      choice: 'stylus', //sass, less or stylus
-      extension: '.styl', //.styl, .sass, .scss, .less
+      choice: 'stylus', //sass or stylus
+      extension: '.styl', //.styl, .sass, .scss
       src:    '<%=global.src%>/<%=global.preprocessor.choice%>/**/*<%=global.preprocessor.extension%>', //dir of sass, less or stylus
       dest:   '<%=global.dest%>/assets/css' //dir of css dest
     }
