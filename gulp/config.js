@@ -3,9 +3,7 @@
 // =======================  PLUGINS ===================================
 
 global['gulp']    = require('gulp');
-global['plugin']  = require(
-                      'gulp-load-plugins'
-                    )({
+global['plugin']  = require('gulp-load-plugins')({
                         pattern       : ['*']
                       , scope         : ['dependencies', 'devDependencies']
                       , replaceString : /^gulp(-|\.)/
@@ -16,42 +14,42 @@ global['plugin']  = require(
                       }
                     });
 
+// paths map
+var path = {
+        src: 'src'
+      , dest: 'app'
+    };
+
 // =======================  CONFIGS ===================================
 
 // set configs for plugins
 module.exports = {
-  stylus: { },
-  sass: { },
-  less: { },
-  test: {
-
-  },
+  src: path.src,
+  dest: path.dest,
+  test: { },
   js: {
-    src: '<%=global.src%>/js/**/*',
-    dest: '<%=global.dest%>/assets/js'
+    src: path.src + '/js/**/*',
+    dest: path.dest + '/assets/js'
   },
   browserSync: {
     server: {
       // Serve up our build folder
-      baseDir: '<%=global.src%>'
+      baseDir: path.src + ''
     }
   },
   images: {
-    src: '<%=global.src%>/images/**',
-    dest: '<%=global.dest%>/assets/images'
+    src: path.src + '/images/**',
+    dest: path.dest + '/assets/images'
   },
   markup: {
-    src: '<%=global.src%>/**/*.html',
-    dest: '<%=global.dest%>'
+    src: path.src + '/**/*.html',
+    dest: path.dest + ''
   },
-  global: {
-    src: 'src',
-    dest: 'app',
-    preprocessor: {
-      choice: 'stylus', //sass or stylus
-      extension: '.styl', //.styl, .sass, .scss
-      src:    '<%=global.src%>/<%=global.preprocessor.choice%>/**/*<%=global.preprocessor.extension%>', //dir of sass, less or stylus
-      dest:   '<%=global.dest%>/assets/css' //dir of css dest
-    }
+  preprocessor: {
+    choice    : 'sass', //sass or stylus
+    src       : path.src + '/sass/**/*.scss', //dir of sass, less or stylus
+    dest      : path.dest + '/assets/css' //dir of css dest
   }
-}
+};
+
+

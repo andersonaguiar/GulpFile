@@ -1,7 +1,9 @@
 var config      = require('../../config');
 
 gulp.task('sass', function () {
-  gulp.src(config.global.preprocessor.src)
+  gulp.src(config.preprocessor.src)
   .pipe(plugin.sass())
-  .pipe(gulp.dest(config.global.preprocessor.dest));
+  .pipe(plugin.size())
+  .pipe(gulp.dest(config.preprocessor.dest))
+  .pipe(plugin.browserSync.reload({stream:true}));
 });
