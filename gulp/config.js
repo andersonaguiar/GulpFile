@@ -31,7 +31,7 @@ module.exports = {
     dest: path.dest + '/assets/js'
   },
   browserSync: {
-    server: { baseDir: path.src }
+    server: { baseDir: path.dest }
   },
   images: {
     src: path.src + '/images/**',
