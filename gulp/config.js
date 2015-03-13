@@ -15,10 +15,7 @@ global['plugin']  = require('gulp-load-plugins')({
                     });
 
 // paths map
-var path = {
-        src: 'src'
-      , dest: 'app'
-    };
+var path = { src: 'src', dest: 'app' };
 
 // =======================  CONFIGS ===================================
 
@@ -26,16 +23,15 @@ var path = {
 module.exports = {
   src: path.src,
   dest: path.dest,
-  test: { },
+  tests: {
+    src: path.src + '/js/tests/**/*'
+  },
   js: {
     src: path.src + '/js/**/*',
     dest: path.dest + '/assets/js'
   },
   browserSync: {
-    server: {
-      // Serve up our build folder
-      baseDir: path.src + ''
-    }
+    server: { baseDir: path.src }
   },
   images: {
     src: path.src + '/images/**',
@@ -47,7 +43,7 @@ module.exports = {
   },
   preprocessor: {
     choice    : 'sass', //sass or stylus
-    src       : path.src + '/sass/**/*.scss', //dir of sass, less or stylus
+    src       : path.src + '/sass/**/*.scss', //dir of sass  or stylus
     dest      : path.dest + '/assets/css' //dir of css dest
   }
 };

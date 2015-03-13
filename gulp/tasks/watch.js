@@ -7,6 +7,9 @@ gulp.task('watch', ['browserSync'], function(callback) {
     // images
     gulp.watch(config.images.src, ['images']);
 
+    // js tests
+    gulp.watch(config.tests.src, ['test']);
+
     // markup
     gulp.watch(config.markup.src, ['markup']);
 });
