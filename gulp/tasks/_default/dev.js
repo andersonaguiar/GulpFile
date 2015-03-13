@@ -1,3 +1,3 @@
 var config      = require('../../config');
 
-gulp.task('dev', ['watch']);
+gulp.task('dev', ['esformatter', 'watch']);

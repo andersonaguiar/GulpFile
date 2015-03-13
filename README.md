@@ -21,7 +21,6 @@ The main tasks are:
 
 For others, look at individual tasks in [`gulp/tasks`](https://github.com/andersonaguiar/GulpFile/tree/master/gulp/tasks).
 
-
 ## License
 
 [MIT License](http://mit-license.org/) © Anderson Aguiar

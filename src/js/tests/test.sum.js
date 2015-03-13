@@ -1,5 +1,5 @@
-var config  = require('should')
-  , sum     = require( '../sum' );
+var sum     = require('../sum')
+  , should  = require('should');
 
 describe('sum.js', function() {
   it('sum of 2 + 3 should return 5', function() {

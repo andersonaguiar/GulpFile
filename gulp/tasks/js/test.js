@@ -7,7 +7,7 @@ gulp.task('mocha', function() {
   );
 });
 
-gulp.task('test', function( done ) {
+gulp.task('test', function(done) {
   gulp.src([ config.tests.src ])
     .pipe( plugin.istanbul() )
     .on('finish', function() {

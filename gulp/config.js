@@ -14,10 +14,11 @@ global['plugin']  = require('gulp-load-plugins')({
                       }
                     });
 
-// paths map
-var path = { src: 'src', dest: 'app' };
 
 // =======================  CONFIGS ===================================
+
+// paths map
+var path = { src: 'src', dest: 'app' };
 
 // set configs for plugins
 module.exports = {
@@ -25,6 +26,10 @@ module.exports = {
   dest: path.dest,
   tests: {
     src: path.src + '/js/tests/**/*'
+  },
+  esformatter: {
+    src: path.src + '/js/*',
+    dest: path.src + '/js'
   },
   js: {
     src: path.src + '/js/**/*',

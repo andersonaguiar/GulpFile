@@ -1,0 +1,18 @@
+{
+  "curly"   : true,
+  "eqeqeq"  : true,
+  "immed"   : true,
+  "laxcomma": true,
+  "latedef" : true,
+  "newcap"  : true,
+  "noarg"   : true,
+  "sub"     : true,
+  "undef"   : false,
+  "boss"    : true,
+  "eqnull"  : true,
+  "node"    : false,
+  "globals" : {
+    "document" : true,
+    "window"   : true
+  }
+}
