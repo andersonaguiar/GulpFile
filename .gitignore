@@ -3,3 +3,4 @@ assets/css/
 app/build
 npm-debug.log
 app
+coverage
