@@ -9,8 +9,4 @@ describe('sum.js', function() {
   it('sum of 30 + 30 should return 60', function() {
     sum(30, 30).should.be.equal(60);
   });
-
-  it('sum of 30 + 30 should return 60', function() {
-    sum(30, 30).should.be.equal(60);
-  });
 });
