@@ -4,3 +4,4 @@ app/build
 npm-debug.log
 app
 coverage
+build.zip

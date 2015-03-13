@@ -10,7 +10,7 @@ global['plugin']  = require('gulp-load-plugins')({
                       , camelize      : true
                       , lazy          : true
                       , rename        : {
-                        'gulp-filesize': 'size'
+                          'gulp-filesize': 'size'
                       }
                     });
 
@@ -27,12 +27,17 @@ module.exports = {
   tests: {
     src: path.src + '/js/tests/**/*'
   },
+  zip: {
+    name: 'build.zip',
+    src: path.dest + '/**/*',
+    dest: './'
+  },
   esformatter: {
     src: path.src + '/js/*',
     dest: path.src + '/js'
   },
   js: {
-    src: path.src + '/js/**/*',
+    src: path.src + '/js/*.js',
     dest: path.dest + '/assets/js'
   },
   browserSync: {
