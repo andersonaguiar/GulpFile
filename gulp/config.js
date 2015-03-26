@@ -3,7 +3,7 @@
 // =======================  PLUGINS ===================================
 
 global['gulp']    = require('gulp');
-global['plugin']  = require('gulp-load-plugins')({
+global['$']  = require('gulp-load-plugins')({
                         pattern       : ['*']
                       , scope         : ['dependencies', 'devDependencies']
                       , replaceString : /^gulp(-|\.)/
@@ -13,7 +13,6 @@ global['plugin']  = require('gulp-load-plugins')({
                           'gulp-filesize': 'size'
                       }
                     });
-
 
 // =======================  CONFIGS ===================================
 

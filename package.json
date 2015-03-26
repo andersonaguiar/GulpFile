@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "title": "Example GULP'",
   "devDependencies": {
-    "beeper": "^1.0.0",
     "browser-sync": "^2.0.0-rc3",
     "chai": "^2.1.1",
     "esformatter-quotes": "^1.0.0",

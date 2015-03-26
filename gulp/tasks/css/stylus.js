@@ -3,11 +3,11 @@ var config      = require('../../config');
 // Get and render all .styl files recursively
 gulp.task('stylus', function () {
   gulp.src(config.preprocessor.src)
-  .pipe(plugin.stylus({
-    use: plugin.nib(),
+  .pipe($.stylus({
+    use: $.nib(),
     compress: true
   }))
-  .pipe(plugin.size())
+  .pipe($.size())
   .pipe(gulp.dest(config.preprocessor.dest))
-  .pipe(plugin.browserSync.reload({stream:true}));
+  .pipe($.browserSync.reload({stream:true}));
 });
