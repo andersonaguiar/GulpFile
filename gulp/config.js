@@ -3,7 +3,7 @@
 // =======================  PLUGINS ===================================
 
 global['gulp']    = require('gulp');
-global['$']  = require('gulp-load-plugins')({
+global['$']       = require('gulp-load-plugins')({
                         pattern       : ['*']
                       , scope         : ['dependencies', 'devDependencies']
                       , replaceString : /^gulp(-|\.)/
@@ -17,7 +17,10 @@ global['$']  = require('gulp-load-plugins')({
 // =======================  CONFIGS ===================================
 
 // paths map
-var path = { src: 'src', dest: 'app' };
+var path = {
+    src: 'src'
+  , dest: 'app'
+};
 
 // set configs for plugins
 module.exports = {
@@ -56,5 +59,3 @@ module.exports = {
     dest      : path.dest + '/assets/css' //dir of css dest
   }
 };
-
-
