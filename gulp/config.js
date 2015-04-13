@@ -1,6 +1,6 @@
 'use strict';
 
-// =======================  PLUGINS ===================================
+// =======================  LOAD PLUGINS ====================================
 
 global['gulp']    = require('gulp');
 global['$']       = require('gulp-load-plugins')({
@@ -14,12 +14,12 @@ global['$']       = require('gulp-load-plugins')({
                       }
                     });
 
-// =======================  CONFIGS ===================================
+// ==========================  CONFIGS ======================================
 
 // paths map
 var path = {
-    src: 'src'
-  , dest: 'app'
+    src:  'src'
+  , dest: 'build'
 };
 
 // set configs for plugins
@@ -51,11 +51,18 @@ module.exports = {
   },
   markup: {
     src: path.src + '/**/*.html',
-    dest: path.dest + ''
+    dest: path.dest
+  },
+  compass: {
+    src: path.src + '/sass',
+    dest: path.dest + '/assets/css'
+  },
+  scssLint: {
+    conf: path.src + '/../scss-lint.yml'
   },
   preprocessor: {
     choice    : 'sass', //sass or stylus
-    src       : path.src + '/sass/**/*.scss', //dir of sass  or stylus
+    src       : path.src + '/sass/**/*.scss', //dir of sass or stylus
     dest      : path.dest + '/assets/css' //dir of css dest
   }
 };
