@@ -1,7 +1,6 @@
+.sass-cache
 node_modules
-assets/css/
-app/build
 npm-debug.log
-app
 coverage
 build.zip
+build
