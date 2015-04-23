@@ -31,6 +31,9 @@
     "nightmare": "^1.7.0",
     "require-dir": "^0.1.0"
   },
+  "scripts": {
+    "preinstall": "./installGlobalDev.sh"
+  },
   "engines": {
     "node": "*",
     "npm": "*"
