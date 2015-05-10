@@ -11,7 +11,7 @@ npm install
 
 ##Configuration
 
-The configuration can be localize in [`gulp/config.js`](https://github.com/andersonaguiar/GulpFile/blob/master/gulp/config.js)
+The configuration of plugins can be localize in [`gulp/config.js`](https://github.com/andersonaguiar/GulpFile/blob/master/gulp/config.js)
 
 ##Usage
 
