@@ -1,5 +1,3 @@
-var config = require('../../config');
-
 gulp.task('esformatter', function() {
   return gulp.src(config.esformatter.src)
     .pipe($.esformatter({

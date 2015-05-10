@@ -1,3 +1,9 @@
-var config = require('../../config');
-
-gulp.task('dev', ['esformatter', 'watch', 'browserSync']);
+gulp.task(
+  'dev',
+  [
+    'esformatter',
+    'copy-assets',
+    'watch',
+    'browserSync'
+  ]
+);

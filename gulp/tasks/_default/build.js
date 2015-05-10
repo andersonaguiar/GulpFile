@@ -1,3 +1,9 @@
-var config = require('../../config');
-
-gulp.task('build', ['images', 'uglifyJs', config.preprocessor.choice]);
+gulp.task(
+  'build',
+  [
+    'clean',
+    'images',
+    'uglifyJs',
+    config.preprocessor.choice
+  ]
+);
