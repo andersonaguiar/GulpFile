@@ -1,3 +1,3 @@
 (function() {
-  console.log(';D');
+  console.log('something');
 })();
