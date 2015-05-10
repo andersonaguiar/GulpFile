@@ -1,8 +1,13 @@
 {
-  "name": "gulp-modular",
-  "description": "Using Gulp modular",
+  "name": "gulpfile",
+  "description": "Configuration for Gulp on modularized form",
   "version": "0.0.1",
-  "title": "Using Gulp modular'",
+  "title": "Configuration for Gulp on modularized form'",
+  "author": {
+    "name": "Anderson Aguiar",
+    "email": "andersonaguiar.web@gmail.com",
+    "url": "https://github.com/andersonaguiar"
+  },
   "devDependencies": {
     "browser-sync": "^2.6.0",
     "chai": "^2.1.1",
@@ -10,12 +15,14 @@
     "gulp": "*",
     "gulp-changed": "^1.2.1",
     "gulp-compass": "^2.0.4",
+    "gulp-concat": "^2.5.2",
     "gulp-esformatter": "^2.0.0",
     "gulp-filesize": "0.0.6",
     "gulp-imagemin": "^2.1.0",
     "gulp-istanbul": "^0.6.0",
     "gulp-jshint": "^1.9.2",
     "gulp-load-plugins": "*",
+    "gulp-minify-css": "^1.1.1",
     "gulp-mocha": "^2.0.0",
     "gulp-print": "^1.1.0",
     "gulp-sass": "^1.3.2",
