@@ -1,5 +1,8 @@
+// load gulp and plugins
+require('./gulp/imports');
+
+// load config for tasks and plugins
+require('./gulp/config');
+
 // Require all tasks in gulp/tasks, including subfolders
-var config      = require('./gulp/config');
-var requireDir  = require('require-dir')('./gulp/tasks', { recurse: true });
-
-
+require('require-dir')('./gulp/tasks', { recurse: true });

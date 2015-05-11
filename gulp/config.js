@@ -1,21 +1,5 @@
 'use strict';
 
-// =======================  LOAD PLUGINS ====================================
-
-global['gulp']  = require('gulp');
-global['$']     = require('gulp-load-plugins')({
-                    pattern       : ['*'],
-                    scope         : ['dependencies', 'devDependencies'],
-                    replaceString : /^gulp(-|\.)/,
-                    camelize      : true,
-                    lazy          : true,
-                    rename        : {
-                      'gulp-filesize': 'size'
-                    }
-                  });
-
-// ==========================  CONFIGS ======================================
-
 // paths map
 var path = {
   src:  'src',
@@ -24,6 +8,7 @@ var path = {
 
 // set configs for plugins
 global['config'] = module.exports = {
+
   src:  path.src,
   dest: path.dest,
   tests: {
