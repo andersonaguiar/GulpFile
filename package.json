@@ -39,7 +39,7 @@
     "require-dir": "^0.1.0"
   },
   "scripts": {
-    "preinstall": "./installGlobalDev.sh"
+    "preinstall": "./installDependencies.sh"
   },
   "engines": {
     "node": "*",

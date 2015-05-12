@@ -8,7 +8,6 @@ var path = {
 
 // set configs for plugins
 global['config'] = module.exports = {
-
   src:  path.src,
   dest: path.dest,
   tests: {
