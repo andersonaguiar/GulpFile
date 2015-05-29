@@ -1,4 +1,3 @@
-// Get and render all .styl files recursively
 gulp.task('stylus', function () {
   gulp.src(config.preprocessor.src)
     .pipe($.stylus({
