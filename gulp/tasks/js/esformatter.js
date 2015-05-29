@@ -1,10 +1,7 @@
 gulp.task('esformatter', function() {
   return gulp.src(config.esformatter.src)
     .pipe($.esformatter({
-      // configs
-      plugins: [
-        "esformatter-quotes"
-      ],
+      plugins: ["esformatter-quotes"],
       quotes: {
         type: "single",
         avoidEscape: false

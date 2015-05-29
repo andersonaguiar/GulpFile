@@ -8,9 +8,7 @@ gulp.task('test', function(done) {
     .pipe($.istanbul())
     .on('finish', function() {
       gulp.src([ config.tests.src ])
-      .pipe($.mocha())
-      .on('error', done)
-      .pipe( $.istanbul.writeReports())
-      .on('end', done);
+        .pipe($.mocha()).on('error', done)
+        .pipe( $.istanbul.writeReports()).on('end', done);
     });
 });
