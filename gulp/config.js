@@ -19,7 +19,7 @@ global['config'] = module.exports = {
     dest: './'
   },
   esformatter: {
-    src:  path.src + '/js/*',
+    src:  path.src + '/js/**/*',
     dest: path.src + '/js'
   },
   js: {
