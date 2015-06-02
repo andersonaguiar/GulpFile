@@ -38,9 +38,6 @@
     "nightmare": "^1.7.0",
     "require-dir": "^0.1.0"
   },
-  "scripts": {
-    "preinstall": "./installDependencies.sh"
-  },
   "engines": {
     "node": "*",
     "npm": "*"
