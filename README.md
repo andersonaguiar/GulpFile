@@ -3,6 +3,16 @@ GulpFile
 
 This Gulpfile was based on [gulp-starter](https://github.com/greypants/gulp-starter).
 
+## Requirements
+
+These are the basic requirements for run, some are optionals:
+
+* `bower 1.3+`
+* `node 0.10+`
+* `gulp`
+* `compass [gem]`
+* `scss-lint [gem]`
+
 ##Instalation
 
 ```bash
