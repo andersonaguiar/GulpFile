@@ -36,7 +36,8 @@
     "matchdep": "^0.3.0",
     "nib": "^1.1.0",
     "nightmare": "^1.7.0",
-    "require-dir": "^0.1.0"
+    "require-dir": "^0.1.0",
+    "should": "^6.0.3"
   },
   "engines": {
     "node": "*",
