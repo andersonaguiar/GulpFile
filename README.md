@@ -3,6 +3,8 @@ GulpFile
 
 This Gulpfile was based on [gulp-starter](https://github.com/greypants/gulp-starter).
 
+Explanation: [Slides](http://www.slideshare.net/andersonagr/automatizando-grandes-aplicaes-de-forma-modular-e-estruturada-com-gulp).
+
 ## Requirements
 
 These are the basic requirements for run, some are optionals:
