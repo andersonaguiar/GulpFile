@@ -23,14 +23,14 @@ global['config'] = module.exports = {
     dest: path.src + '/js'
   },
   js: {
-    src:  path.src + '/js/*.js',
+    src:  path.src + '/js/**/*.js',
     dest: path.dest + '/assets/js'
   },
   browserSync: {
     server: { baseDir: path.dest }
   },
   images: {
-    src:  path.src + '/images/**',
+    src:  path.src + '/images/**/*',
     dest: path.dest + '/assets/images'
   },
   markup: {
