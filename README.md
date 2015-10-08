@@ -1,19 +1,24 @@
 GulpFile
 ========
 
-This Gulpfile was based on [gulp-starter](https://github.com/greypants/gulp-starter).
+> A simple way to use Gulp.
 
-Explanation: [Slides](http://www.slideshare.net/andersonagr/automatizando-grandes-aplicaes-de-forma-modular-e-estruturada-com-gulp).
+<a href="http://andersonaguiar.com.br/talk-anderson-aguiar-tdc-2015-gulp/"><img width="728" src="http://puu.sh/kCo7k/8e8e2ecc7d.png" alt="Post"></a>
 
-## Requirements
+Thanks to:
 
-These are the basic requirements for run, some are optionals:
+[Viget Labs](https://github.com/greypants/gulp-starter) and [Daniel Leite de Oliveira](https://github.com/dleitee/gulp-es6).
 
-* `bower 1.3+`
-* `node 0.10+`
-* `gulp`
-* `compass [gem]`
-* `scss-lint [gem]`
+## Why
+
+- [x] Tasks modularized by context
+- [x] Without manual imports for every plugin, just install and use it
+- [x] ES6 syntax
+- [x] Common plugins already mapped on package.json(remove unnecessary)
+
+##Presentation
+
+[Automating Large Applications on Modular and Structured Form with Gulp](http://www.slideshare.net/andersonagr/automatizando-grandes-aplicaes-de-forma-modular-e-estruturada-com-gulp)
 
 ##Instalation
 
@@ -23,7 +28,7 @@ npm install
 
 ##Configuration
 
-The configuration of plugins can be localize in [`gulp/config.js`](https://github.com/andersonaguiar/GulpFile/blob/master/gulp/config.js)
+The configuration of plugins can be localized in [`gulp/config.js`](https://github.com/andersonaguiar/GulpFile/blob/master/gulp/config.js)
 
 ##Usage
 
@@ -31,7 +36,9 @@ The main tasks are:
 
 `gulp dev` and `gulp build`
 
-For others, look at individual tasks in [`gulp/tasks`](https://github.com/andersonaguiar/GulpFile/tree/master/gulp/tasks).
+For run others, look at individual tasks in [`gulp/tasks`](https://github.com/andersonaguiar/GulpFile/tree/master/gulp/tasks).
+
+(:
 
 ## License
 
