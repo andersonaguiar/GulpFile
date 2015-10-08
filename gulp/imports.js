@@ -1,7 +1,8 @@
-'use strict';
+import gulp from 'gulp';
+import plugins from 'gulp-load-plugins';
 
-global['gulp']  = require('gulp');
-global['$']     = require('gulp-load-plugins')({
+global['gulp'] =  gulp;
+global['$']    =  plugins({
                     pattern       : ['*'],
                     scope         : ['dependencies', 'devDependencies'],
                     replaceString : /^gulp(-|\.)/,
@@ -11,3 +12,4 @@ global['$']     = require('gulp-load-plugins')({
                       'gulp-filesize': 'size'
                     }
                   });
+

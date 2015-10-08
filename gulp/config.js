@@ -1,5 +1,3 @@
-'use strict';
-
 // paths map
 var path = {
   src:  'src',
@@ -7,7 +5,7 @@ var path = {
 };
 
 // set configs for plugins
-global['config'] = module.exports = {
+global['config'] = {
   src:  path.src,
   dest: path.dest,
   tests: {
