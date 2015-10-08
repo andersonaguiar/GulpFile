@@ -1,4 +1,4 @@
-gulp.task('esformatter', function() {
+gulp.task('esformatter', () => {
   return gulp.src(config.esformatter.src)
     .pipe($.esformatter({
       plugins: ["esformatter-quotes"],

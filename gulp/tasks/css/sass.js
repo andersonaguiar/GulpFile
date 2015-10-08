@@ -1,4 +1,4 @@
-gulp.task('sass', function() {
+gulp.task('sass', () => {
   gulp.src(config.preprocessor.src)
     .pipe($.scssLint({
       'config': config.scssLint.conf,

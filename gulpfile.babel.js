@@ -1,3 +1,5 @@
+'use strict';
+
 // load gulp and plugins
 require('./gulp/imports');
 

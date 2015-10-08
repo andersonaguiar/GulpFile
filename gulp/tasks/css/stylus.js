@@ -1,4 +1,4 @@
-gulp.task('stylus', function () {
+gulp.task('stylus', () => {
   gulp.src(config.preprocessor.src)
     .pipe($.stylus({
       use: $.nib(),

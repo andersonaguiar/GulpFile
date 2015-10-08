@@ -1,4 +1,4 @@
-gulp.task('mocha', function() {
+gulp.task('mocha', () => {
   gulp.src([ config.tests.src ], { read : false })
     .pipe($.mocha({ reporter: 'list' }));
 });

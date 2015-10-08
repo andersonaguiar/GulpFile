@@ -5,5 +5,5 @@ gulp.task(
     'copy-assets',
     'watch',
     'browserSync'
-  ]
+  ], () => {}
 );

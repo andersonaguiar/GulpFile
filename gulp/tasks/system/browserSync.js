@@ -1,3 +1,3 @@
-gulp.task('browserSync', function() {
+gulp.task('browserSync', () => {
   $.browserSync(config.browserSync);
 });

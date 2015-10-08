@@ -5,5 +5,5 @@ gulp.task(
     'images',
     'uglifyJs',
     config.preprocessor.choice
-  ]
+  ], () => {}
 );

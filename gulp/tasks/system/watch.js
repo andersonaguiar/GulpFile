@@ -1,6 +1,6 @@
 var reload = $.browserSync.reload;
 
-gulp.task('watch', function(callback) {
+gulp.task('watch', (callback) => {
   // sass|stylus
   gulp.watch(config.preprocessor.src, [config.preprocessor.choice]);
 
