@@ -9,7 +9,7 @@ global['config'] = {
   src:  path.src,
   dest: path.dest,
   tests: {
-    src: path.src + '/js/tests/**/*'
+    src: 'tests/**/*'
   },
   zip: {
     name: 'build.zip',
@@ -17,18 +17,18 @@ global['config'] = {
     dest: './'
   },
   esformatter: {
-    src:  path.src + '/js/**/*',
-    dest: path.src + '/js'
+    src:  path.src + '/assets/js/**/*',
+    dest: path.src + '/assets/js'
   },
   js: {
-    src:  path.src + '/js/**/*.js',
+    src:  path.src + '/assets/js/**/*.js',
     dest: path.dest + '/assets/js'
   },
   browserSync: {
     server: { baseDir: path.dest }
   },
   images: {
-    src:  path.src + '/images/**/*',
+    src:  path.src + '/assets/images/**/*',
     dest: path.dest + '/assets/images'
   },
   markup: {
@@ -36,7 +36,7 @@ global['config'] = {
     dest: path.dest
   },
   compass: {
-    src:  path.src + '/sass',
+    src:  path.src + '/assets/sass',
     dest: path.dest + '/assets/css'
   },
   scssLint: {
@@ -44,7 +44,7 @@ global['config'] = {
   },
   preprocessor: {
     choice: 'sass', //sass or stylus
-    src:    path.src + '/sass/**/*.scss', //dir of sass or stylus
+    src:    path.src + '/assets/sass/**/*.scss', //dir of sass or stylus
     dest:   path.dest + '/assets/css' //dir of css dest
   }
 };
