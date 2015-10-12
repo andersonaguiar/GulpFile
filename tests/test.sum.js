@@ -1,4 +1,4 @@
-var sum = require('../sum'),
+var sum = require('../src/assets/js/sum'),
   should = require('should');
 
 describe('sum.js', function() {
