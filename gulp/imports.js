@@ -9,7 +9,9 @@ global['$']    =  plugins({
                     camelize      : true,
                     lazy          : true,
                     rename        : {
-                      'gulp-filesize': 'size'
+                      'gulp-filesize': 'size',
+                      'gulp-sequence': 'gulpSequence',
+                      'gulp-babel': 'babeljs'
                     }
                   });
 
