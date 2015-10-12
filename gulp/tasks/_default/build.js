@@ -3,7 +3,7 @@ gulp.task(
   [
     'clean',
     'images',
-    'uglifyJs',
     config.preprocessor.choice
-  ], () => {}
+  ],
+  $.gulpSequence('babel', 'uglifyJs')
 );

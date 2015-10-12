@@ -8,7 +8,7 @@ gulp.task('watch', (callback) => {
   gulp.watch(config.images.src, ['images']);
 
   // js
-  gulp.watch(config.js.src, ['jshint', 'uglifyJs']);
+  gulp.watch(config.js.src, ['jshint', 'babel']);
 
   // js tests
   gulp.watch(config.tests.src, ['test']);
