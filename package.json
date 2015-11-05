@@ -9,8 +9,8 @@
     "url": "https://github.com/andersonaguiar"
   },
   "devDependencies": {
-    "babel": "*",
-    "babel-core": "*",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
     "browser-sync": "*",
     "chai": "*",
     "esformatter-quotes": "*",
