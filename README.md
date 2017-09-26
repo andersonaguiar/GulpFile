@@ -20,17 +20,17 @@ Thanks to:
 
 [Automating Large Applications on Modular and Structured Form with Gulp](http://www.slideshare.net/andersonagr/automatizando-grandes-aplicaes-de-forma-modular-e-estruturada-com-gulp)
 
-##Instalation
+## Instalation
 
 ```bash
 npm install
 ```
 
-##Configuration
+## Configuration
 
 The configuration of plugins can be localized in [`gulp/config.js`](https://github.com/andersonaguiar/GulpFile/blob/master/gulp/config.js)
 
-##Usage
+## Usage
 
 The main tasks are:
 
