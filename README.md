@@ -16,7 +16,7 @@ Thanks to:
 - [x] ES6 syntax
 - [x] Common plugins already mapped on package.json(remove unnecessary)
 
-##Presentation
+## Presentation
 
 [Automating Large Applications on Modular and Structured Form with Gulp](http://www.slideshare.net/andersonagr/automatizando-grandes-aplicaes-de-forma-modular-e-estruturada-com-gulp)
 
